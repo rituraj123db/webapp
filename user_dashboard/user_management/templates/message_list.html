@@ -1,0 +1,35 @@
+<html>
+<head>
+    <style>
+    table, th, td {
+  border: 1px solid black;
+}
+
+    </style>
+</head>
+<body>
+
+<table border>
+    <thead>
+    <tr>
+        <th>S.N</th>
+        <th>Message ID</th>
+        <th>Name</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    {% if apps %}
+    {% for app in apps %}
+    <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ app.id }}</td>
+        <td>{{ app.message }}</td>
+    </tr>
+    <!-- end for and if -->
+    {% endfor %}
+    {% endif %}
+    </tbody>
+</table>
+</body>
+</html>

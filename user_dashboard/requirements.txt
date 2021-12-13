@@ -1,0 +1,7 @@
+# Django related
+django==3.2.7
+django-service-objects==0.7.0
+
+# Code formatting
+black==21.8b0
+isort==5.9.3
